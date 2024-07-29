@@ -1,0 +1,310 @@
+# Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+# Project information
+site_name: iMX RT1011 Nano Kit
+site_url: https://wiki.makerdiary.com/imxrt1011-nanokit
+site_author: makerdiary
+site_description: >-
+  The documentation offers all you need to start developing with iMX RT1011 Nano Kit.
+
+# Repository
+repo_name: makerdiary/imxrt1011-nanokit
+repo_url: https://github.com/makerdiary/imxrt1011-nanokit
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: 'Copyright &copy; 2016-2024 <a href="https://makerdiary.com" target="_blank">makerdiary</a>'
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/.overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+  # Announcement bar
+  announcement: ""
+  # Home page
+  home:
+    hero:
+      title: Rapid prototyping with high-performance processing
+      description: >-
+        iMX RT1011 Nano Kit is a small, high-performing prototyping kit designed around NXP's iMX RT1011
+        Crossover MCU based on a Cortex-M7 core operating at up to 500 MHz. The design offers easy-to-use
+        form factor, high speed USB, 128 Mbit QSPI flash, flexible power management and a rich set of features,
+        including UF2 Bootloader, Zephyr RTOS, Python, and more.
+      image: assets/images/imxrt1011-nanokit-hero.png
+      button_primary:
+        label: Quick Start
+        link: getting-started
+      button_secondary:
+        label: Buy Now
+        link: https://makerdiary.com/products/imxrt1011-nanokit
+    multicolumn:
+      id: everything-you-would-expect
+      heading: Everything you would expect
+      columns:
+        - icon: microcotroller
+          title: iMX RT1011 Crossover MCU
+          description: >-
+            Designed around NXP's iMX RT1011 Crossover MCU based on the Arm Cortex-M7 core, which operates
+            at speeds up to 500 MHz to provide high CPU performance and best real-time response. It has
+            128 KB on-chip RAM that can be flexibly configured as TCM or general-purpose.
+        - icon: material/hexagon-multiple
+          title: Rich features & peripherals
+          description: >-
+            Provides external 128 Mbit QSPI flash with XIP support, flexible power management, programmable
+            LED and Button as well as numerous peripherals including high speed USB, UART, SPI, I2C, SAI,
+            PWM, GPIO, ADC and etc to support a wide range of applications.
+        - icon: material/chip
+          title: Easy-to-use form factor
+          description: >-
+            Easy-to-use form factor with USB-C and dual-row 40 pins in DIP/SMT type, including up to 33 multi-function
+            GPIO pins (15 can be configured as ADC inputs) and Serial Wire Debug (SWD) port. Available with loose or
+            pre-soldered headers, for even more flexibility in your projects.
+        - icon: material/file-download
+          title: Easy firmware update
+          description: >-
+            Supports UF2 Bootloader that allows you to flash your firmware by just dragging and dropping
+            .uf2 file onto the flash drive without using an external programmer. The USR button can be used to enter
+            ROM Serial Downloader even when the UF2 Bootloader gets corrupted somehow.
+        - icon: material/link-box-variant
+          title: Built on Open Source
+          description: >-
+            Supports Zephyr RTOS which offers protocol stacks, samples, hardware drivers and a large and ever
+            growing number of features. Python is also supported, which allows you access hardware-specific functionality
+            and peripherals in the popular Python programming language.
+        - icon: material/file-document-check
+          title: Well documented
+          description: >-
+            An extensive set of documentation is available, including getting started and developer guides which can help
+            you save big by reducing development effort. The documentation is hosted as a GitHub repository that allows
+            managing the updates over time.
+    news:
+      id: what-is-new
+      heading: What's new
+      viewall: blog
+      posts:
+        - title: CircuitPython on iMX RT1011 Nano Kit
+          excerpt: >-
+            CircuitPython allows you to access hardware-specific functionality and peripherals in the popular Python programming language. It's quite
+            simple for rapid prototyping.
+          cover: blog/circuitpython-on-imx-rt1011-nano-kit/cover.png
+          url: blog/circuitpython-on-imx-rt1011-nano-kit
+          date: 2024-06-17
+          readtime: 4
+        - title: Introducing Zephyr RTOS
+          excerpt: >-
+            Zephyr RTOS is an open-source collaborative effort uniting developers and users in building a best-in-class small, scalable real⁃time
+            operating system.
+          cover: blog/introducing-zephyr-rtos/cover.png
+          url: blog/introducing-zephyr-rtos
+          date: 2024-06-16
+          readtime: 4
+        - title: iMX RT1011 Nano Kit is Here!
+          excerpt: >-
+            We are excited to announce the iMX RT1011 Nano Kit, a small, high-performing prototyping kit designed around NXP's iMX RT1011
+            Crossover MCU operating at up to 500 MHz.
+          cover: blog/imx-rt1011-nano-kit-is-here/cover.png
+          url: blog/imx-rt1011-nano-kit-is-here
+          date: 2024-06-15
+          readtime: 5
+# Plugins
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+      post_date_format: medium
+      pagination_per_page: 6
+      pagination_keep_content: true
+      post_url_format: "{slug}"
+      post_readtime_words_per_minute: 128
+      categories: false
+      archive: false
+  # - git-revision-date-localized
+  - minify:
+      minify_html: true
+
+  # TODO: Support Chinese
+  # - i18n:
+  #    default_language: en
+  #    languages:
+  #      en: English
+  #      zh: 简体中文
+
+# Customization
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/shopify
+      link: https://makerdiary.com
+    - icon: fontawesome/brands/github
+      link: https://github.com/makerdiary
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/makerdiary
+    - icon: fontawesome/brands/discourse
+      link: https://community.makerdiary.com
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@makerdiary
+    - icon: fontawesome/solid/blog
+      link: https://blog.makerdiary.com
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/makerdiary
+    - icon: fontawesome/solid/envelope
+      link: mailto:hi@makerdiary.com
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: makerdiary
+      repo: imxrt1011-nanokit
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - Product:
+    - Introduction: introduction.md
+    - Hardware description: hardware.md
+    - Purchase: purchase.md
+    - Revision history: revision-history.md
+    - License: LICENSE.md
+  - Getting Started:
+    - Quick Start Guide: getting-started.md
+    - Programming:
+      - programming/index.md
+      - Using UF2 Bootloader: programming/uf2boot.md
+      - MCUXpresso Secure Provisioning: programming/mcuxpresso-secure-provisioning.md
+    - Resources:
+      - resources/index.md
+    - Contributing:
+      - contributing/index.md
+  - Developer Guides:
+    - Develop with Zephyr RTOS:
+      - guides/zephyr/index.md
+      - Setting up the environment: guides/zephyr/setup.md
+      - Building and running the first sample: guides/zephyr/building.md
+      - Samples:
+        - guides/zephyr/samples/index.md
+        - Hello World: guides/zephyr/samples/hello_world.md
+        - Blinky: guides/zephyr/samples/blinky.md
+        - Button: guides/zephyr/samples/button.md
+        - ADC: guides/zephyr/samples/adc.md
+        - PWM: guides/zephyr/samples/pwm.md
+        - Shell: guides/zephyr/samples/shell.md
+        - USB Device:
+          - USB HID Keyboard: guides/zephyr/samples/usb/hid_keyboard.md
+          - USB HID Mouse: guides/zephyr/samples/usb/hid_mouse.md
+    - Code in Python:
+      - guides/python/index.md
+      - Getting started with CircuitPython: guides/python/getting-started.md
+      - Samples:
+        - guides/python/samples/index.md
+        - Blinky: guides/python/samples/blinky.md
+        - Button: guides/python/samples/button.md
+        - ADC: guides/python/samples/adc.md
+        - CPU Temperature: guides/python/samples/cpu_temperature.md
+        - PWM: guides/python/samples/pwm.md
+        - USB Device:
+          - USB HID Keyboard: guides/python/samples/usb/hid_keyboard.md
+          - USB HID Mouse: guides/python/samples/usb/hid_mouse.md
+      - Reference: guides/python/reference.md
+  - Blog:
+      - blog/index.md
+  - Discussions: https://github.com/makerdiary/imxrt1011-nanokit/discussions
