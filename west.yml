@@ -1,0 +1,26 @@
+# Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+# SPDX-License-Identifier: Apache-2.0
+
+manifest:
+  self: 
+    path: imxrt1011-nanokit
+  remotes:
+    - name: makerdiary
+      url-base: https://github.com/makerdiary
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import:
+        # By using name-allowlist we can clone only the modules that are
+        # strictly needed by the application.
+        name-allowlist:
+          - cmsis      # required by the ARM port
+          - hal_nxp    # required by the NXP chip based boards
+          - mbedtls
+          - lvgl
+          - fatfs
+          - littlefs

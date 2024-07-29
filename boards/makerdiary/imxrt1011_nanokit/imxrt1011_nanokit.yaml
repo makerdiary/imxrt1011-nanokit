@@ -1,0 +1,25 @@
+#
+# Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+identifier: imxrt1011_nanokit
+name: Makerdiary iMX RT1011 Nano Kit
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 64
+flash: 16384
+supported:
+  - i2c
+  - counter
+  - dma
+  - usb_device
+  - spi
+  - adc
+  - gpio
+vendor: makerdiary

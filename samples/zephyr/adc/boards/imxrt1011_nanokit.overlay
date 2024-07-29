@@ -1,0 +1,174 @@
+/*
+ * Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ {
+    chosen {
+        zephyr,console = &cdc_acm_uart0;
+    };
+    zephyr,user {
+        io-channels = <&adc1 0>,
+                      <&adc1 1>,
+                      <&adc1 2>,
+                      <&adc1 3>,
+                      <&adc1 4>,
+                      <&adc1 5>,
+                      <&adc1 6>,
+                      <&adc1 7>,
+                      <&adc1 8>,
+                      <&adc1 9>,
+                      <&adc1 10>,
+                      <&adc1 11>,
+                      <&adc1 12>,
+                      <&adc1 13>,
+                      <&adc1 14>;
+    };
+};
+
+&adc1 {
+    status = "okay";
+    pinctrl-0 = <&pinmux_adc1>;
+    pinctrl-names = "default";
+
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    channel@0 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@1 {
+        reg = <1>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@2 {
+        reg = <2>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@3 {
+        reg = <3>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@4 {
+        reg = <4>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@5 {
+        reg = <5>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@6 {
+        reg = <6>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@7 {
+        reg = <7>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@8 {
+        reg = <8>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@9 {
+        reg = <9>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@a {
+        reg = <10>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@b {
+        reg = <11>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@c {
+        reg = <12>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@d {
+        reg = <13>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+    channel@e {
+        reg = <14>;
+        zephyr,gain = "ADC_GAIN_1";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+};
+
+&pinctrl {
+    pinmux_adc1: pinmux_adc1 {
+        group0 {
+            pinmux = <&iomuxc_gpio_ad_00_adc1_in0>,
+                     <&iomuxc_gpio_ad_01_adc1_in1>,
+                     <&iomuxc_gpio_ad_02_adc1_in2>,
+                     <&iomuxc_gpio_ad_03_adc1_in3>,
+                     <&iomuxc_gpio_ad_04_adc1_in4>,
+                     <&iomuxc_gpio_ad_05_adc1_in5>,
+                     <&iomuxc_gpio_ad_06_adc1_in6>,
+                     <&iomuxc_gpio_ad_07_adc1_in7>,
+                     <&iomuxc_gpio_ad_08_adc1_in8>,
+                     <&iomuxc_gpio_ad_09_adc1_in9>,
+                     <&iomuxc_gpio_ad_10_adc1_in10>,
+                     <&iomuxc_gpio_ad_11_adc1_in11>,
+                     <&iomuxc_gpio_ad_12_adc1_in12>,
+                     <&iomuxc_gpio_ad_13_adc1_in13>,
+                     <&iomuxc_gpio_ad_14_adc1_in14>;
+            drive-strength = "r0-4";
+            slew-rate = "slow";
+            nxp,speed = "100-mhz";
+        };
+    };
+};
+
+&zephyr_udc0 {
+    cdc_acm_uart0: cdc_acm_uart0 {
+        compatible = "zephyr,cdc-acm-uart";
+    };
+};

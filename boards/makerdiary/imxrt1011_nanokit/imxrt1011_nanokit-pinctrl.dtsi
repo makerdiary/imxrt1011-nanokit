@@ -1,0 +1,48 @@
+/*
+ * Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+ * SPDX-License-Identifier: Apache-2.0
+ *
+ */
+
+#include <nxp/nxp_imx/rt/mimxrt1011dae5a-pinctrl.dtsi>
+
+&pinctrl {
+    /* flexpwm output for board LED */
+    pinmux_flexpwm1_1: pinmux_flexpwm1_1 {
+        group0 {
+            pinmux = <&iomuxc_gpio_sd_04_flexpwm1_pwm1_a>;
+            drive-strength = "r0-4";
+            slew-rate = "slow";
+            nxp,speed = "100-mhz";
+        };
+    };
+
+	/* MCUX SDK sets the drive strength of pins on RT1010 to 4 by default */
+	pinmux_lpuart1: pinmux_lpuart1 {
+		group0 {
+			pinmux = <&iomuxc_gpio_09_lpuart1_rxd>,
+				<&iomuxc_gpio_10_lpuart1_txd>;
+			drive-strength = "r0-4";
+			slew-rate = "slow";
+			nxp,speed = "100-mhz";
+		};
+	};
+
+	pinmux_lpuart1_sleep: pinmux_lpuart1_sleep {
+		group0 {
+			pinmux = <&iomuxc_gpio_09_gpiomux_io09>;
+			drive-strength = "r0-4";
+			bias-pull-up;
+			bias-pull-up-value = "100k";
+			slew-rate = "slow";
+			nxp,speed = "100-mhz";
+		};
+		group1 {
+			pinmux = <&iomuxc_gpio_10_lpuart1_txd>;
+			drive-strength = "r0-4";
+			slew-rate = "slow";
+			nxp,speed = "100-mhz";
+		};
+	};
+
+};

@@ -1,0 +1,10 @@
+sample:
+  name: USB HID keyboard sample
+common:
+  build_only: true
+  integration_platforms:
+    - imxrt1011_nanokit
+tests:
+  sample.usb.hid-keyboard: {}
+  sample.usb.hid-keyboard.nouf2:
+    extra_args: EXTRA_CONF_FILE=overlay-nouf2.conf

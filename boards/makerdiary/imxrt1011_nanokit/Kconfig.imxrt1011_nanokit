@@ -1,0 +1,5 @@
+# Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_IMXRT1011_NANOKIT
+    select SOC_PART_NUMBER_MIMXRT1011DAE5A

@@ -1,0 +1,10 @@
+sample:
+  name: Hello World Sample
+common:
+  build_only: true
+  integration_platforms:
+    - imxrt1011_nanokit
+tests:
+  sample.hello_world: {}
+  sample.hello_world.nouf2:
+    extra_args: EXTRA_CONF_FILE=overlay-nouf2.conf

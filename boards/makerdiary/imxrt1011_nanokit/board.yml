@@ -1,0 +1,5 @@
+board:
+  name: imxrt1011_nanokit
+  vendor: makerdiary
+  socs:
+    - name: mimxrt1011

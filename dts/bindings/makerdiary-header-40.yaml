@@ -1,0 +1,34 @@
+#
+# Copyright (c) 2016-2024 Makerdiary <https://makerdiary.com>
+# SPDX-License-Identifier: Apache-2.0
+#
+
+description: |
+    GPIO pins exposed on Makerdiary Headers (40 Pins).
+
+    This binding provides a nexus mapping for the default 31 pins as depicted below:
+
+        -  VBUS              3V3   -
+        -  VSYS              GND   -
+        -  GND               RST   -
+        -  3V3_EN            SWCLK -
+        0  IO0               SWDIO -
+        1  IO1               IO30  30
+        2  IO2               IO29  29
+        3  IO3               IO28  28
+        4  IO4               IO27  27
+        5  IO5               IO26  26
+        6  IO6               IO25  25
+        7  IO7               IO24  24
+        8  IO8               IO23  23
+        9  IO9               IO22  22
+        10 IO10              IO21  21
+        11 IO11              IO20  20
+        12 IO12              IO19  19
+        13 IO13              IO18  18
+        14 IO14              IO17  17
+        15 IO15              IO16  16
+
+compatible: "makerdiary-header-40"
+
+include: [gpio-nexus.yaml, base.yaml]
