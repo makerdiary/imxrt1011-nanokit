@@ -1,0 +1,19 @@
+# editors
+.vscode
+*.swp
+*~
+
+# python
+.venv
+
+# build
+/build*
+/twister-out*
+
+__pycache__/
+
+# mkdocs
+site
+
+# macOS internals
+.DS_Store
