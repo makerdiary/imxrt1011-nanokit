@@ -66,9 +66,11 @@ static ALWAYS_INLINE void rwup_if_suspended(void)
 	}
 }
 
-static void input_cb(struct input_event *evt)
+static void input_cb(struct input_event *evt, void *user_data)
 {
 	struct kb_event kb_evt;
+
+	ARG_UNUSED(user_data);
 
 	rwup_if_suspended();
 
@@ -79,7 +81,7 @@ static void input_cb(struct input_event *evt)
 	}
 }
 
-INPUT_CALLBACK_DEFINE(NULL, input_cb);
+INPUT_CALLBACK_DEFINE(NULL, input_cb, NULL);
 
 static int kb_get_report(const struct device *dev,
 			struct usb_setup_packet *setup, int32_t *len,

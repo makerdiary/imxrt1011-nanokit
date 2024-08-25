@@ -53,9 +53,11 @@ static ALWAYS_INLINE void rwup_if_suspended(void)
 	}
 }
 
-static void input_cb(struct input_event *evt)
+static void input_cb(struct input_event *evt, void *user_data)
 {
 	uint8_t tmp[MOUSE_REPORT_COUNT];
+
+	ARG_UNUSED(user_data);
 
 	(void)memcpy(tmp, report, sizeof(tmp));
 
@@ -92,7 +94,7 @@ static void input_cb(struct input_event *evt)
 	}
 }
 
-INPUT_CALLBACK_DEFINE(NULL, input_cb);
+INPUT_CALLBACK_DEFINE(NULL, input_cb, NULL);
 
 int main(void)
 {
