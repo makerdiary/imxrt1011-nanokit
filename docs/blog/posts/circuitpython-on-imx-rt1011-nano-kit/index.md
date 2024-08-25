@@ -1,6 +1,6 @@
 ---
 title: CircuitPython on iMX RT1011 Nano Kit
-date: 2024-06-17
+date: 2024-08-25
 authors:
   - makerdiary
 cover: cover.png

@@ -1,6 +1,6 @@
 ---
 title: Introducing Zephyr RTOS
-date: 2024-06-16
+date: 2024-08-25
 authors:
   - makerdiary
 cover: cover.png

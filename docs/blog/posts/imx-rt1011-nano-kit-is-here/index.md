@@ -1,6 +1,6 @@
 ---
 title: iMX RT1011 Nano Kit is Here!
-date: 2024-06-15
+date: 2024-08-25
 authors:
   - makerdiary
 cover: cover.png
