@@ -45,7 +45,7 @@ To install the UF2 Bootloader, complete the following steps:
 6. Open up a terminal window and run two commands with `sdphost`, changing the name of the `.bin` file as appropriate:
 
 	``` { .bash linenums="1" }
-	sdphost -u 0x1fc9,0x0145 write-file 0x20206400 uf2_bootloader_imxrt1011_nanokit_<version>.bin
+	sdphost -u 0x1fc9,0x0145 write-file 0x20206400 uf2_bootloader-imxrt1011_nanokit-<version>.bin
 	```
 	``` { .bash linenums="2" }
 	sdphost -u 0x1fc9,0x0145 jump-address 0x20207000
