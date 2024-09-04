@@ -10,6 +10,9 @@
 /build*
 /twister-out*
 
+# tests
+tests/factory_test
+
 __pycache__/
 
 # mkdocs
