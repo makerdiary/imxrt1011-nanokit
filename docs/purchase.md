@@ -5,7 +5,7 @@
 iMX RT1011 Nano Kit is available on the following channels (click to go directly to the product):
 
 [![makerdiary store](assets/images/makerdiary-store.png){ width='260' display='inline' }](https://makerdiary.com/products/imxrt1011-nanokit)
-[![Taobao](assets/images/taobao-store.png){ width='143' display='inline' }](https://item.taobao.com/item.htm?spm=a1z10.5-c.w4002-2992523837.11.2df3715as0Kydn&id=725739500435)
+[![Taobao](assets/images/taobao-store.png){ width='143' display='inline' }](https://zaowubang.taobao.com/)
 [![Tindie](assets/images/tindie-store.png){ width='128' display='inline' }](https://www.tindie.com/products/makerdiary/imxrt1011-nanokit/)
 
 

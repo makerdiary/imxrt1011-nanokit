@@ -1,4 +1,4 @@
-# iMX RT1011 Nano Kit<br/><small>Rapid prototyping with high-performance processing designed around NXP's iMX RT1011 Crossover MCU</small>
+# iMX RT1011 Nano Kit<br/><small>High-performance microcontroller board operating up to 500MHz, built around NXP iMX RT1011</small>
 
 ## Introduction
 
@@ -14,7 +14,7 @@ It's shipped with UF2 Bootloader for easy firmware update. Zephyr RTOS and Pytho
 
 * NXP's MIMXRT1011DAE5A Crossover MCU
 
-    - 500 MHz Arm® Cortex-M7
+    - Arm® Cortex-M7 @ 500MHz
     - On-chip RAM size up to 128 KB shared with CM7 TCM
     - Boot ROM (64 KB)
     - High speed USB, UART, SPI, I2C, SAI, PWM, GPIO, ADC support
@@ -43,6 +43,6 @@ The following figure illustrates the iMX RT1011 Nano Kit hardware diagram. The d
 
 |Part                                                |Quantity |
 |----------------------------------------------------|---------|
-|iMX RT1011 Nano Kit                                 |1        |
+|iMX RT1011 Nano Kit board                           |1        |
 |20 Pin 2.54mm THT Pin Header(Loose or Pre-soldered) |2        |
 

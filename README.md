@@ -4,7 +4,7 @@
 [![Zephyr Samples](https://github.com/makerdiary/imxrt1011-nanokit/actions/workflows/twister-samples.yml/badge.svg?branch=main)](https://wiki.makerdiary.com/imxrt1011-nanokit/guides/zephyr/samples/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?color=informational)](/.github/CONTRIBUTING.md)
 
-> Rapid prototyping with high-performance processing designed around NXP's iMX RT1011 Crossover MCU
+> High-performance microcontroller board operating up to 500MHz, built around NXP iMX RT1011
 
 ## Introduction
 
@@ -20,7 +20,7 @@ It's shipped with [UF2 Bootloader][uf2boot] for easy firmware update. [Zephyr RT
 
 * NXP's MIMXRT1011DAE5A Crossover MCU
 
-    - 500 MHz Arm® Cortex-M7
+    - Arm® Cortex-M7 @ 500MHz
     - On-chip RAM size up to 128 KB shared with CM7 TCM
     - Boot ROM (64 KB)
     - High speed USB, UART, SPI, I2C, SAI, PWM, GPIO, ADC support
@@ -59,6 +59,14 @@ We offer an extensive set of documentation, including getting started and develo
 * [iMX RT011 Nano Kit Hardware Description][hardware-description]
 * [iMX RT011 Nano Kit Schematic Rev.A][schematic]
 * [iMX RT011 Nano Kit 3D Model Rev.A][3d-model]
+
+## Where to Buy
+
+iMX RT1011 Nano Kit is available on the following channels (click to go directly to the product):
+
+<a href="https://makerdiary.com/products/imxrt1011-nanokit"><img alt="makerdiary store" display="inline" src="./docs/assets/images/makerdiary-store.png" width="260"></a>
+<a href="https://zaowubang.taobao.com"><img alt="Taobao" display="inline" src="./docs/assets/images/taobao-store.png" width="143"></a>
+<a href="https://www.tindie.com/products/makerdiary/imx-rt1011-nano-kit/"><img alt="Tindie" display="inline" src="./docs/assets/images/tindie-store.png" width="128"></a>
 
 ## Community Support
 
