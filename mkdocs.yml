@@ -141,7 +141,7 @@ theme:
             simple for rapid prototyping.
           cover: blog/circuitpython-on-imx-rt1011-nano-kit/cover.png
           url: blog/circuitpython-on-imx-rt1011-nano-kit
-          date: 2024-08-25
+          date: 2024-09-17
           readtime: 4
         - title: Introducing Zephyr RTOS
           excerpt: >-
@@ -149,7 +149,7 @@ theme:
             operating system.
           cover: blog/introducing-zephyr-rtos/cover.png
           url: blog/introducing-zephyr-rtos
-          date: 2024-08-25
+          date: 2024-09-17
           readtime: 4
         - title: iMX RT1011 Nano Kit is Here!
           excerpt: >-
@@ -157,7 +157,7 @@ theme:
             Crossover MCU operating at up to 500 MHz.
           cover: blog/imx-rt1011-nano-kit-is-here/cover.png
           url: blog/imx-rt1011-nano-kit-is-here
-          date: 2024-08-25
+          date: 2024-09-16
           readtime: 5
 # Plugins
 plugins:

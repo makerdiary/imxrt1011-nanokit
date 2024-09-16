@@ -14,7 +14,7 @@ The design provides external 128 Mbit QSPI flash with XIP support, flexible powe
 
 It's shipped with [UF2 Bootloader][uf2boot] for easy firmware update. [Zephyr RTOS][zephyr-guide] and [Python][python-guide] are supported as well for rapid prototyping.
 
-![product hero](./docs/assets/images/imxrt1011-nanokit-hero.png)
+[![product hero](./docs/assets/images/imxrt1011-nanokit-hero.png)](imxrt1011-nanokit)
 
 ## Key Features
 
@@ -65,12 +65,17 @@ We offer an extensive set of documentation, including getting started and develo
 iMX RT1011 Nano Kit is available on the following channels (click to go directly to the product):
 
 <a href="https://makerdiary.com/products/imxrt1011-nanokit"><img alt="makerdiary store" display="inline" src="./docs/assets/images/makerdiary-store.png" width="260"></a>
-<a href="https://zaowubang.taobao.com"><img alt="Taobao" display="inline" src="./docs/assets/images/taobao-store.png" width="143"></a>
-<a href="https://www.tindie.com/products/makerdiary/imx-rt1011-nano-kit/"><img alt="Tindie" display="inline" src="./docs/assets/images/tindie-store.png" width="128"></a>
+<a href="https://item.taobao.com/item.htm?id=835308027346"><img alt="Taobao" display="inline" src="./docs/assets/images/taobao-store.png" width="143"></a>
+<a href="https://www.tindie.com/products/makerdiary/imx-rt1011-nano-kit-500mhz-microcontroller-board/"><img alt="Tindie" display="inline" src="./docs/assets/images/tindie-store.png" width="128"></a>
 
 ## Community Support
 
 Community support is provided via [GitHub Discussions][discussions]. We would love to have more developers contribute to this project! If you're passionate about making this project better, see our [Contributing Guidelines][contributing] for more information.
+
+## License
+
+Copyright (c) 2016-2024 Makerdiary. See [LICENSE](./LICENSE) for further details.
+
 
 [imxrt1011-nanokit]: https://makerdiary.com/products/imxrt1011-nanokit
 [uf2boot]: https://wiki.makerdiary.com/imxrt1011-nanokit/programming/uf2boot/
