@@ -81,7 +81,7 @@ Copyright (c) 2016-2024 Makerdiary. See [LICENSE](./LICENSE) for further details
 [uf2boot]: https://wiki.makerdiary.com/imxrt1011-nanokit/programming/uf2boot/
 [zephyr-guide]: https://wiki.makerdiary.com/imxrt1011-nanokit/guides/zephyr/
 [python-guide]: https://wiki.makerdiary.com/imxrt1011-nanokit/guides/python/
-[hardware-description]: https://wiki.makerdiary.com/imxrt1011-nanokit/imxrt1011-nanokit/hardware/
+[hardware-description]: https://wiki.makerdiary.com/imxrt1011-nanokit/hardware/
 [pinout]: https://wiki.makerdiary.com/imxrt1011-nanokit/assets/attachments/imxrt1011-nanokit-pinout_reva.pdf
 [wiki]: https://wiki.makerdiary.com/imxrt1011-nanokit/
 [product-brief]: https://wiki.makerdiary.com/imxrt1011-nanokit/introduction/
